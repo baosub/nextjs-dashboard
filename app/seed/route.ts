@@ -2,6 +2,8 @@ import bcrypt from 'bcrypt';
 import { db } from '@vercel/postgres';
 import { invoices, customers, revenue, users } from '../lib/placeholder-data';
 
+//PUEDES BORRAR TODO ESTE ARCHIVO, SOLO SIRVE PARA ALIMENTAR TU DASE DE DATOS, PERO UNA VEZ CREADA PUEDES ELIMITAR ESTE ARCHIVO.
+
 const client = await db.connect();
 
 async function seedUsers() {
